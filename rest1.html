@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PJ's Restaurant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      background: url('https://wallpaperaccess.com/full/271708.jpg') center/cover no-repeat;
+      height: 90vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 4px #000;
+    }
+    header h1 {
+      font-size: 4em;
+    }
+    header p {
+      font-size: 1.5em;
+      font-style: italic;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .about, .services, .menu, .contact {
+      text-align: center;
+    }
+    .about img, .chefs img, .menu img, .drinks img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .chefs, .dishes, .drinks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+    <button onclick="window.location.href='form.html'">profile</button>
+
+  </nav>
+
+  <header id="home">
+    <h1>PJ's Restaurant</h1>
+    <p>"Where Indian Tradition Meets Taste"</p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Located in the heart of India, PJ’s Restaurant brings a modern twist to traditional Indian cuisine. Founded by food lovers and run by India’s top chefs, we serve dishes that speak to the soul.</p>
+    <img src="https://wallpapercave.com/wp/wp1874173.jpg" alt="Restaurant Interior" />
+    
+    <h3 style="margin-top: 40px;">Our Chefs</h3>
+    <div class="chefs">
+      <div>
+        <img src=https://www.indiabelong.com/wp-content/uploads/2025/02/Sanjeev-Kapoor.webp alt="Chef Sanjeev Kapoor" />
+        <p><strong>Chef Sanjeev Kapoor</strong></p>
+        <p><strong>Sanjeev Kapoor is the most prominent and iconic personality in the Indian culinary landscape. He first shot to fame for hosting a highly popular food show named Khana Khazana which ran for 17 years and brought the nuances of top-notch cooking to households in India and abroad. Kapoor has developed his own curated recipes across cuisines, right from Indian to Continental.</strong></p>
+      </div>
+      <div>
+        <img src=https://tse4.mm.bing.net/th/id/OIP.7L8qyPg8Dwk6VeJ4W67-ZQHaE8?pid=Api&P=0&h=180 alt="Chef Vikas Khanna" />
+        <p><strong>Chef Vikas Khanna</strong></p>
+        <p><strong>Vikas Khanna is a Michelin Star celebrity chef and also a restaurateur and film maker. He graduated in hotel management from Manipal Academy of Higher Education, before moving to USA to study at the Culinary Institute of America. Khanna worked in a number of high-end hotels in India and USA prior to opening his own restaurant in Dubai named Kinara. He followed it up with two more restaurants, Ellora in Dubai and Bungalow in New York City.</strong></p>
+      </div>
+      <div>
+        <img src=https://tse2.mm.bing.net/th/id/OIP.1bERqVt7YjX0eWUXxWg15wHaE8?pid=Api&P=0&h=180 alt="Chef Ranveer Brar" />
+        <p><strong>Chef Ranveer Brar</strong></p>
+        <p><strong>Ranveer Brar is a celebrity chef, television personality, restaurateur and author. He began his career as a chef with the Taj Hotel in Delhi, and became the youngest executive chef in India when he was appointed to this position at the Raddison Blue Hotel in Noida. Brar opened a Franco-Asian restaurant in Boston which won several awards. Presently, he is the Senior Executive Chef at Novotel, Juhu Beach.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul style="list-style: none; padding: 0; font-size: 1.1em;">
+      <li>Dine-in with luxury ambiance</li>
+      <li>Fast food delivery & takeout</li>
+      <li>Catering services for events</li>
+      <li>Private chef and VIP rooms</li>
+    </ul>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our Menu Card</h2>
+
+    <h3>Breakfast Dishes</h3>
+    <div class="dishes">
+      <div><img src="https://tse1.mm.bing.net/th/id/OIP.3rpLJA5r8J4feP8fXiTcSAHaEp?pid=Api&P=0&h=180" alt="Masala Dosa"><p>Masala Dosa – ₹120</p></div>
+      <div><img src="https://tse4.mm.bing.net/th/id/OIP.gHemYRQdRCmFb6-06XZrZAHaE8?pid=Api&P=0&h=180" alt="Idli Sambar"><p>Idli Sambar – ₹80</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.CMYS8e5-yH6WJINe3wq-OgHaEo?pid=Api&P=0&h=180" alt="Poha"><p>Poha – ₹50</p></div>
+      <div><img src="https://tse4.mm.bing.net/th/id/OIP.boBBw90ShLIHl5l9pQvbQgHaE7?pid=Api&P=0&h=180" alt="Upma"><p>Upma – ₹70</p></div>
+      <div><img src="https://tse2.mm.bing.net/th/id/OIP.7c-7j0swU6Z7agqytwT0HAHaGE?pid=Api&P=0&h=180" alt="Medu Vada"><p>Medu Vada – ₹100</p></div>
+      <div><img src="https://tse1.mm.bing.net/th/id/OIP.fqIDsUJ_Q_AeugyLsRaAfgHaHa?pid=Api&P=0&h=180" alt="Pav Bhaji"><p>Pav Bhaji – ₹150</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.Xp2RQVjyCr3kN1G8VhcK_wHaE_?pid=Api&P=0&h=180" alt="Samosa"><p>Samosa – ₹80</p></div>
+      <div><img src="https://tse1.mm.bing.net/th/id/OIP.IWt6Om4xCjsj11xVMqYyYwHaE8?pid=Api&P=0&h=180" alt="Aloo Paratha"><p>Aloo Paratha – ₹250</p></div>
+      <div><img src="https://spicecravings.com/wp-content/uploads/2021/09/Air-Fryer-Garlic-Bread-Featured.jpg" alt="Garlic Bread"><p>GArlic Bread – ₹150</p></div>
+      <div><img src="https://tse4.mm.bing.net/th/id/OIP.zBmB8cbq6GqiRydqRjCBuwHaE8?pid=Api&P=0&h=180" alt="Poori Bhaji"><p>Poori Bhaji – ₹120</p></div>
+      <div><img src="https://tse4.mm.bing.net/th/id/OIP.idupfWFzwDFW6nTIqwWXTAHaF8?pid=Api&P=0&h=180" alt="Spring Roll"><p>Spring Roll – ₹200</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.PYt3h_MvbEA-fyLQTwzYEwHaFj?pid=Api&P=0&h=180" alt="Uttapam"><p>UttapamS – ₹90</p></div>
+    </div>
+
+    <h3>Lunch & Dinner</h3>
+    <div class="dishes">
+      <div><img src="https://tse4.mm.bing.net/th/id/OIP.t8fjuBtoCx7eoPznO9wgzgHaHa?pid=Api&P=0&h=180" alt="Butter Chicken"><p>Butter Chicken – ₹700</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.pvLG-_RmoJCcsTkKEcqIzgHaEo?pid=Api&P=0&h=180" alt="Dal Makhani"><p>Dal Makhani – ₹500</p></div>
+      <div><img src="https://tse4.mm.bing.net/th/id/OIP.e2zrprovXkAO4Xk5YttZygHaEK?pid=Api&P=0&h=180" alt="Mutton Curry"><p>Mutton Curry – ₹900</p></div>
+      <div><img src="https://tse4.mm.bing.net/th/id/OIP.8NfFiw3vMaSAiKvy4WISJAHaE9?pid=Api&P=0&h=180" alt="Butter Paneer Masala"><p>Butter Paneer Masala – ₹650</p></div>
+      <div><img src="https://tse1.mm.bing.net/th/id/OIP.M6_-FAJf2Ui9BKIYb4DxiQHaHa?pid=Api&P=0&h=180" alt="Dal Tadka"><p>Dal Tadka – ₹200</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.k7hfKiHnuzsgNEz6XK114gHaE8?pid=Api&P=0&h=180" alt="Fish Fry"><p>Fish Fry – ₹750</p></div>
+      <div><img src="https://tse2.mm.bing.net/th/id/OIP.o5DBIt-RM-USbLTcTF9PMwHaEK?pid=Api&P=0&h=180" alt="Lobster"><p>Labster – ₹1700</p></div>
+      <div><img src="https://tse2.mm.bing.net/th/id/OIP.XMowjPBCSyY8yiycMY6d5wHaD9?pid=Api&P=0&h=180" alt="Crab"><p>Crab – ₹1200</p></div>
+      <div><img src="https://i.ytimg.com/vi/2qxOAKYrupw/maxresdefault.jpg" alt="Chicken Tandoori"><p>Chicken Tandoori – ₹1100</p></div>
+      <div><img src="https://c.ndtvimg.com/2022-03/2bskhke8_chicken-curry_625x300_30_March_22.jpg" alt="Green Chicken"><p>Green Chicken – ₹700</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.CRSs2FITeIV82gyHdVWmPwHaFX?pid=Api&P=0&h=180" alt="Shahi Paneer"><p>Shahi Paneer – ₹450</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.0_28zXYZhao3zvbAwers5wHaE7?pid=Api&P=0&h=180" alt="Mutton Biryani"><p>Mutton Biryani – ₹1200</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.k4xC3lQs22-ibkUtKVCYVAHaFj?pid=Api&P=0&h=180" alt="Chicken Biryani"><p>Chicken Biryani – ₹1000</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.kYXKULtcs2IR-O3wFekZgQHaE7?pid=Api&P=0&h=180" alt="Chicken Curry"><p>Chicken Curry – ₹750</p></div>
+      <div><img src="https://tse1.mm.bing.net/th/id/OIP.i_Q2mkHCLAqhwqowo_UvhwHaGv?pid=Api&P=0&h=180" alt="Mix Veg"><p>Mix Veg – ₹200</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.aGshGuSs7ZcpMFSIp67ySgHaE8?pid=Api&P=0&h=180" alt="Paneer Tikka Masala"><p>Paneer Tikka Masala – ₹400</p></div>
+                   
+    </div>
+
+    <h3>Drinks</h3>
+    <div class="drinks">
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.kUT1Bg-nw1E0Bw_62AaFkQHaFK?pid=Api&P=0&h=180" alt="Tea"><p>Tea – ₹30</p></div>
+      <div><img src="https://tse4.mm.bing.net/th/id/OIP.wnBptd3Ac-2M36v0-4hIVQHaE5?pid=Api&P=0&h=180" alt="Masala Tea"><p>Masala Tea – ₹40</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.eJlL1bD_3COtRZisaPXgqwHaLO?pid=Api&P=0&h=180" alt="Cold Coffee"><p>Cold Coffee – ₹200</p></div>
+      <div><img src="https://tse2.mm.bing.net/th/id/OIP.9KMo8fujro_56c47kaWIXAHaGl?pid=Api&P=0&h=180" alt="Black Coffee"><p>Black Cofee – ₹50</p></div>
+      <div><img src="https://tse1.mm.bing.net/th/id/OIP.jqxR_QrdtXQR6kfXBUHrBAHaFD?pid=Api&P=0&h=180" alt="Orange Juice"><p>Orange Juice – ₹180</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.77HqeqPxlaEQuSxKt7NyXwHaHa?pid=Api&P=0&h=180" alt="Mogito"><p>Mogito – ₹150</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.SeCqtxdK9vZEDG1AppGOaAHaE8?pid=Api&P=0&h=180" alt="Red Wine"><p>Red Wine – ₹1900</p></div>
+      <div><img src="https://tse4.mm.bing.net/th/id/OIP._LKav08MD2eac0dPwFhBDAHaHa?pid=Api&P=0&h=180" alt="Lemon Soda"><p>Lemon Soda – ₹120</p></div>
+      <div><img src="https://tse1.mm.bing.net/th/id/OIP.4xZJAAUVdh2GMeFxbEhgYwHaEX?pid=Api&P=0&h=180" alt="Fruit Beer"><p>Fruit Beer – ₹550</p></div>
+      <div><img src="https://tse2.mm.bing.net/th/id/OIP.yVbsKVU9zz4ZvK88uoAWfgHaHa?pid=Api&P=0&h=180" alt="Apple Juice"><p>Apple Juice – ₹350</p></div>
+      <div><img src="https://tse3.mm.bing.net/th/id/OIP.3rmKSdqdMEGJdd_cWqtB2wHaK7?pid=Api&P=0&h=180" alt="Margarita"><p>Margarita – ₹600</p></div>
+      <div><img src="https://ik.imagekit.io/bhug69xts/dirty-martini.png" alt="Martini"><p>Martini – ₹700</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <section id="contact-form" class="contact-form">
+  <h2>Get in Touch</h2>
+  <form action="" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +91-87883-24097</p>
+    <p><strong>Email:</strong> pjsrestaurant@gmail.com</p>
+    <p><strong>Address:</strong> 143 Food Street, Pune, India</p>
+  </section>
+
+  <footer>
+    &copy; 2025 PJ’s Restaurant. All rights reserved.
+  </footer>
+
+</body>
+</html>
